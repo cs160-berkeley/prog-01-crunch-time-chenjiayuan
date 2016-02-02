@@ -23,25 +23,26 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //spinner
         final Spinner spinner = (Spinner) findViewById(R.id.exercise_spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.exercises_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
+        //change unit according to spinner selection
         TextView repminSelectText = (TextView)findViewById(R.id.repminSelect);
-
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
                 TextView repminSelectText = (TextView) findViewById(R.id.repminSelect);
                 String unit = repOrMin(spinner.getSelectedItem().toString());
                 repminSelectText.setText(unit);
             }
-
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
 
+        //to-do: change activities with menu selection
     }
 
     public void calculateClickHandler(View view) {
@@ -53,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
             TextView resultText = (TextView)findViewById(R.id.resultLabel);
             TextView caloriesBurntText = (TextView)findViewById(R.id.calories_burnt);
             TextView repminSelectText = (TextView)findViewById(R.id.repminSelect);
-            //to-do: change rem/mins automatically
 
             //display result
             if(repmin.length() == 0) {
@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //calculate calories burnt
     private int calculateCalories(String exercise_type, String repmin) {
         int result;
         int number = Integer.parseInt(repmin);
@@ -99,12 +100,14 @@ public class MainActivity extends AppCompatActivity {
         } else return 0;
     }
 
+    //decide which unit to display (reps or minutes)
     private String repOrMin(String e) {
         if (e.equals("Pushup")||e.equals("Situp")||e.equals("Squats")||e.equals("Pullup")) {
             return "Reps";
         } else
             return "Minutes";
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
