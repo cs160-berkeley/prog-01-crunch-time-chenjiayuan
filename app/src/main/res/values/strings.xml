@@ -3,6 +3,8 @@
     <string name="action_settings">设置</string>
     <string name="exercise_calorie">Input the types of exercise and number of mins/reps, and check how
     many calories you just burnt!</string>
+    <string name="exercise_exercise">Input the types of exercise and number of mins/reps, and check how
+    many equvalent mins/reps you should do for other exercises!</string>
     <string-array name="exercises_array">
         <item>Pushup</item>
         <item>Situp</item>
@@ -17,8 +19,8 @@
         <item>Swimming</item>
         <item>Stair-Climbing</item>
     </string-array>
-    <string name="reps">reps</string>
-    <string name="mins">mins</string>
+    <string name="reps">Reps</string>
+    <string name="mins">Minutes</string>
     <string name="repmin">reps/mins</string>
     <string name="calculateButton">Calculate!</string>
     <string name="emptyString"></string>

@@ -100,9 +100,9 @@ public class MainActivity extends AppCompatActivity {
     //decide which unit to display (reps or minutes)
     private String repOrMin(String e) {
         if (e.equals("Pushup")||e.equals("Situp")||e.equals("Squats")||e.equals("Pullup")) {
-            return "Reps";
+            return getString(R.string.reps);
         } else
-            return "Minutes";
+            return getString(R.string.mins);
     }
 
     @Override

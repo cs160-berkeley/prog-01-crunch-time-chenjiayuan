@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -19,6 +20,9 @@ public class Main2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //prevent keyboard appear automatically
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -45,29 +49,50 @@ public class Main2Activity extends AppCompatActivity {
         });
     }
 
-
     public void calculateClickHandler(View view) {
         if (view.getId() == R.id.calculateButton) {
             Spinner exercise_spinner = (Spinner) findViewById(R.id.exercise_spinner);
             String exercise_type = exercise_spinner.getSelectedItem().toString();
             EditText repminText = (EditText)findViewById(R.id.repminText);
             String repmin= repminText.getText().toString();
-            TextView resultText = (TextView)findViewById(R.id.resultLabel);
-            TextView caloriesBurntText = (TextView)findViewById(R.id.calories_burnt);
             //display result
             if(repmin.length() == 0) {
-                resultText.setError("");
-                caloriesBurntText.setText(getString(R.string.emptyString));
-                resultText.setText(getString(R.string.not_valid));
-            } else {
-                resultText.setError(null);
-                int cal = calculateCalories(exercise_type, repmin);
-                resultText.setText(String.valueOf(cal));
-                caloriesBurntText.setText(getString(R.string.calories_burnt));
+                repmin = "0";
             }
+            calculateExercises(exercise_type, repmin);
         }
     }
 
+    private void calculateExercises(String exercise_type, String repmin) {
+        TextView pushup = (TextView)findViewById(R.id.pushup);
+        TextView situp = (TextView)findViewById(R.id.situp);
+        TextView squats = (TextView)findViewById(R.id.squats);
+        TextView leglift = (TextView)findViewById(R.id.leglift);
+        TextView plank = (TextView)findViewById(R.id.plank);
+        TextView jumpingjacks = (TextView)findViewById(R.id.jumpingjacks);
+        TextView pullup = (TextView)findViewById(R.id.pullup);
+        TextView cycling = (TextView)findViewById(R.id.cycling);
+        TextView walking = (TextView)findViewById(R.id.walking);
+        TextView jogging = (TextView)findViewById(R.id.jogging);
+        TextView swimming = (TextView)findViewById(R.id.swimming);
+        TextView stairclimbing = (TextView)findViewById(R.id.stairclimbing);
+
+        int calories = calculateCalories(exercise_type, repmin);
+
+        pushup.setText(Integer.toString(calories*350/100));
+        situp.setText(Integer.toString(calories*200/100));
+        squats.setText(Integer.toString(calories*225/100));
+        leglift.setText(Integer.toString(calories*25/100));
+        plank.setText(Integer.toString(calories*25/100));
+        jumpingjacks.setText(Integer.toString(calories*10/100));
+        pullup.setText(Integer.toString(calories*100/100));
+        cycling.setText(Integer.toString(calories*12/100));
+        walking.setText(Integer.toString(calories*20/100));
+        jogging.setText(Integer.toString(calories*12/100));
+        swimming.setText(Integer.toString(calories*13/100));
+        stairclimbing.setText(Integer.toString(calories*15/100));
+
+    }
     //calculate calories burnt
     private int calculateCalories(String exercise_type, String repmin) {
         int result;
