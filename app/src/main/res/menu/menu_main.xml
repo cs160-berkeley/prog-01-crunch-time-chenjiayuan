@@ -3,8 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="bosschen.crunchtime.MainActivity">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
+        android:id="@+id/option1"
+        android:icon="@drawable/ic_filter_1_white_48dp"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/option2"
+        android:icon="@drawable/ic_filter_2_white_48dp"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/option3"
+        android:icon="@drawable/ic_filter_3_white_48dp"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom"/>
+
 </menu>

@@ -24,4 +24,9 @@
     <string name="emptyString"></string>
     <string name="calories_burnt">Calories burnt! Keep up!</string>
     <string name="not_valid">please enter a valid number!</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="e2c">Exercise -> Calories</string>
+    <string name="e2e">Exercise -> Exercises</string>
+    <string name="c2e">Calories -> Exercises</string>
 </resources>

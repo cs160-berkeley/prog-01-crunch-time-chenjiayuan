@@ -9,15 +9,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="bosschen.crunchtime.MainActivity"
-    tools:showIn="@layout/activity_main"
+    tools:context="bosschen.crunchtime.MainActivity2"
+    tools:showIn="@layout/activity_main2"
     android:orientation="vertical" >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/e2c"
+        android:text="@string/e2e"
         android:textSize="30sp"
         android:gravity="center" />
 
