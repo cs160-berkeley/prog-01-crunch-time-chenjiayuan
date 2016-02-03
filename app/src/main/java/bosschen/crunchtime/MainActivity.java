@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //prevent keyboard appear automatically
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -62,15 +66,11 @@ public class MainActivity extends AppCompatActivity {
             TextView caloriesBurntText = (TextView)findViewById(R.id.calories_burnt);
             //display result
             if(repmin.length() == 0) {
-                resultText.setError("");
-                caloriesBurntText.setText(getString(R.string.emptyString));
-                resultText.setText(getString(R.string.not_valid));
-            } else {
-                resultText.setError(null);
-                int cal = calculateCalories(exercise_type, repmin);
-                resultText.setText(String.valueOf(cal));
-                caloriesBurntText.setText(getString(R.string.calories_burnt));
+                repmin = "0";
             }
+            int cal = calculateCalories(exercise_type, repmin);
+            resultText.setText(String.valueOf(cal));
+            caloriesBurntText.setText(getString(R.string.calories_burnt));
         }
     }
 

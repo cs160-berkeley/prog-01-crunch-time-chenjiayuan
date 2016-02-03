@@ -5,6 +5,8 @@
     many calories you just burnt!</string>
     <string name="exercise_exercise">Input the types of exercise and number of mins/reps, and check how
     many equvalent mins/reps you should do for other exercises!</string>
+    <string name="calorie_exercise">Input the amount of calories you plan to burn today, and check how
+    many equvalent mins/reps you should do for each exercises!</string>
     <string-array name="exercises_array">
         <item>Pushup</item>
         <item>Situp</item>
@@ -21,6 +23,7 @@
     </string-array>
     <string name="reps">Reps</string>
     <string name="mins">Minutes</string>
+    <string name="calories">Calories</string>
     <string name="repmin">reps/mins</string>
     <string name="calculateButton">Calculate!</string>
     <string name="emptyString"></string>

@@ -85,50 +85,48 @@ public class Main2Activity extends AppCompatActivity {
         TextView swimming = (TextView)findViewById(R.id.swimming);
         TextView stairclimbing = (TextView)findViewById(R.id.stairclimbing);
 
-        int calories = calculateCalories(exercise_type, repmin);
-
-        pushup.setText(Integer.toString(calories*350/100));
-        situp.setText(Integer.toString(calories*200/100));
-        squats.setText(Integer.toString(calories*225/100));
-        leglift.setText(Integer.toString(calories*25/100));
-        plank.setText(Integer.toString(calories*25/100));
-        jumpingjacks.setText(Integer.toString(calories*10/100));
-        pullup.setText(Integer.toString(calories*100/100));
-        cycling.setText(Integer.toString(calories*12/100));
-        walking.setText(Integer.toString(calories*20/100));
-        jogging.setText(Integer.toString(calories*12/100));
-        swimming.setText(Integer.toString(calories*13/100));
-        stairclimbing.setText(Integer.toString(calories*15/100));
+        int denom = calculateCaloriesIdx(exercise_type);
+        int number = Integer.parseInt(repmin);
+        pushup.setText(Integer.toString(number*350/denom));
+        situp.setText(Integer.toString(number*200/denom));
+        squats.setText(Integer.toString(number*225/denom));
+        leglift.setText(Integer.toString(number*25/denom));
+        plank.setText(Integer.toString(number*25/denom));
+        jumpingjacks.setText(Integer.toString(number*10/denom));
+        pullup.setText(Integer.toString(number*100/denom));
+        cycling.setText(Integer.toString(number*12/denom));
+        walking.setText(Integer.toString(number*20/denom));
+        jogging.setText(Integer.toString(number*12/denom));
+        swimming.setText(Integer.toString(number*13/denom));
+        stairclimbing.setText(Integer.toString(number*15/denom));
 
     }
     //calculate calories burnt
-    private int calculateCalories(String exercise_type, String repmin) {
-        int result;
-        int number = Integer.parseInt(repmin);
+    private int calculateCaloriesIdx(String exercise_type) {
         if(exercise_type.equals("Pushup")) {
-            return number*100/350;
+            return 350;
         } else if(exercise_type.equals("Situp")) {
-            return number*100/200;
+            return 200;
         } else if(exercise_type.equals("Squats")) {
-            return number*100/225;
+            return 225;
         } else if(exercise_type.equals("Leg-lift")) {
-            return number*100/25;
+            return 25;
         } else if(exercise_type.equals("Plank")) {
-            return number*100/25;
+            return 25;
         } else if(exercise_type.equals("Jumping Jacks")) {
-            return number*100/10;
+            return 10;
         } else if(exercise_type.equals("Pullup")) {
-            return number*100/100;
+            return 100;
         } else if(exercise_type.equals("Cycling")) {
-            return number*100/12;
+            return 12;
         } else if(exercise_type.equals("Walking")) {
-            return number*100/20;
+            return 20;
         } else if(exercise_type.equals("Jogging")) {
-            return number*100/12;
+            return 12;
         } else if(exercise_type.equals("Swimming")) {
-            return number*100/13;
+            return 13;
         } else if(exercise_type.equals("Stair-Climbing")) {
-            return number*100/15;
+            return 15;
         } else return 0;
     }
 
