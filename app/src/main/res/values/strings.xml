@@ -21,7 +21,7 @@
         <item>Swimming</item>
         <item>Stair-Climbing</item>
     </string-array>
-    <string name="reps">Reps</string>
+    <string name="reps">Rep</string>
     <string name="mins">Minutes</string>
     <string name="calories">Calories</string>
     <string name="repmin">reps/mins</string>

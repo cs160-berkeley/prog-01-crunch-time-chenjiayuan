@@ -36,14 +36,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
             <EditText
                 android:id="@+id/caloriesText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:layout_weight="4"
-                android:maxLength="10" />
+                android:maxLength="5" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
