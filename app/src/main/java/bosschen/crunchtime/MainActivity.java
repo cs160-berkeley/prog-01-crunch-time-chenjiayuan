@@ -1,5 +1,6 @@
 package bosschen.crunchtime;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -46,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void calculateClickHandler(View view) {
         if (view.getId() == R.id.calculateButton) {
+            //hide keyboard after button click
+            InputMethodManager inputManager = (InputMethodManager)
+                    getSystemService(Context.INPUT_METHOD_SERVICE);
+            inputManager.hideSoftInputFromWindow((null == getCurrentFocus())
+                    ? null : getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+
             Spinner exercise_spinner = (Spinner) findViewById(R.id.exercise_spinner);
             String exercise_type = exercise_spinner.getSelectedItem().toString();
             EditText repminText = (EditText)findViewById(R.id.repminText);
