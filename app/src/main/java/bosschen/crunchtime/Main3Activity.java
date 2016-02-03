@@ -97,6 +97,10 @@ public class Main3Activity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         Intent intent;
         switch (item.getItemId()) {
+            case R.id.help:
+                intent = new Intent(this, Main4Activity.class);
+                startActivity(intent);
+                return true;
             case R.id.option1:
                 intent = new Intent(this, MainActivity.class);
                 startActivity(intent);

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Crunch Time</string>
-    <string name="action_settings">设置</string>
+    <string name="action_settings1">exercise to calories</string>
+    <string name="action_settings2">exercise to exercises</string>
+    <string name="action_settings3">calories to exercises</string>
     <string name="exercise_calorie">Input the types of exercise and number of mins/reps, and check how
     many calories you just burnt!</string>
     <string name="exercise_exercise">Input the types of exercise and number of mins/reps, and check how
@@ -34,4 +36,80 @@
     <string name="e2c">Exercise --> Calories</string>
     <string name="e2e">Exercise --> Exercises</string>
     <string name="c2e">Calories --> Exercises</string>
+    <string name="title_activity_main4">Main4Activity</string>
+    <string name="help">Workout Wiki</string>
+    <string name="wiki1">A push-up (or press-up) is a common calisthenics exercise performed
+        in a prone position by raising and lowering the body using the arms. Push-ups exercise
+        the pectoral muscles, triceps, and anterior deltoids, with ancillary benefits to the
+        rest of the deltoids, serratus anterior, coracobrachialis and the midsection as a whole.
+        Push-ups are a basic exercise used in civilian athletic training or physical education
+        and commonly in military physical training. They are also a common form of punishment
+        used in the military, school sport, or in some martial arts disciplines. In the past
+        this movement was called a floor dip.</string>
+    <string name="wiki2">The sit-up is an abdominal strength training exercise commonly performed
+        to strengthen the abdominal muscles. It is similar to a crunch (crunches target the rectus
+        abdominus and also work the external and internal obliques), but sit-ups have a fuller
+        range of motion and condition additional muscles. Sit-ups target the hip flexors, rectus
+        abdominus and also work the iliopsoas, tensor fasciae latae, rectus femoris, sartorius,
+        and, to a very small degree, the obliques.</string>
+    <string name="wiki3">In strength training and fitness, the squat is a compound, full body
+        exercise that trains primarily the muscles of the thighs, hips and buttocks, quadriceps
+        (vastus lateralis, vastus medialis, vastus intermedius and rectus femoris), hamstrings,
+        as well as strengthening the bones, ligaments and insertion of the tendons throughout
+        the lower body. Squats are considered a vital exercise for increasing the strength and
+        size of the legs and buttocks, as well as developing core strength. Isometrically, the
+        lower back, the upper back, the abdominals, the trunk muscles, the costal muscles, and
+        the shoulders and arms are all essential to the exercise and thus are trained when
+        squatting with the proper form.</string>
+    <string name="wiki4">The leg raise is a strength training exercise which targets the iliopsoas
+        (the interior hip flexors). Because the abdominal muscles are used isometrically to
+        stabilize the body during the motion, leg raises are also often used to strengthen the
+        rectus abdominis muscle and the internal and external oblique muscles.</string>
+    <string name="wiki5">The plank (also called a front hold, hover, or abdominal bridge) is an
+        isometric core strength exercise that involves maintaining a position similar to a push-up
+        for the maximum possible time.</string>
+    <string name="wiki6">A jumping jack (Canada and US) or star jump (UK and other Commonwealth
+        nations), also called side-straddle hop in the US military, is a physical jumping exercise
+        performed by jumping to a position with the legs spread wide and the hands touching
+        overhead, sometimes in a clap, and then returning to a position with the feet together
+        and the arms at the sides. The jumping jack name comes from the traditional toy of the
+        same name, while "star jump" refers to the person\'s appearance with legs and arms
+        spread.</string>
+    <string name="wiki7">A pull-up is an upper-body compound pulling exercise. Although it can
+        be performed with any grip, in recent years some have used the term to refer more
+        specifically to a pull-up performed with a palms-forward position. The term chin-up,
+        traditionally referring to a pull-up with the chin brought over top of a bar, was used in
+        the 1980s to refer to a palms-away (overhand/pronated) grip, with a palms-toward
+        (underhand/supinated) grip being called a "reverse-grip" chin-up. In later decades, this
+        usage has inverted, with some using "chin" to refer to a pull-up done with a palms-backward
+        position. In spite of this, "chin" is still regularly used refer to overhand-grip.</string>
+    <string name="wiki8">Cycling, also called bicycling or biking, is the use of bicycles for
+        transport, recreation, exercise or sport.[1] Persons engaged in cycling are referred
+        to as "cyclists",[2] "bikers",[3] or less commonly, as "bicyclists".[4] Apart from
+        two-wheeled bicycles, "cycling" also includes the riding of unicycles, tricycles,
+        quadracycles, recumbent and similar human-powered vehicles (HPVs).</string>
+    <string name="wiki9">Walking (also known as ambulation) is one of the main gaits of locomotion
+        among legged animals, and is typically slower than running and other gaits. Walking is
+        defined by an \'inverted pendulum\' gait in which the body vaults over the stiff limb or
+        limbs with each step. This applies regardless of the number of limbs - even arthropods,
+        with six, eight or more limbs, walk.</string>
+    <string name="wiki10">Jogging is a form of trotting or running at a slow or leisurely pace.
+        The main intention is to increase physical fitness with less stress on the body than from
+        faster running, or to maintain a steady speed for longer periods of time. Performed over
+        long distances, it is a form of aerobic endurance training.</string>
+    <string name="wiki11">Human swimming is the self-propulsion of a person through water or another
+        liquid, usually for recreation, sport, exercise, or survival. Locomotion is achieved through
+        coordinated movement of the limbs, the body, or both. Humans can hold their breath
+        underwater and undertake rudimentary locomotive swimming within weeks of birth, as an
+        evolutionary response.</string>
+    <string name="wiki12">Stair climbing is the climbing of a flight of stairs. It is often
+        described as a "low-impact" exercise, often for people who have recently started trying
+        to get in shape. A common exhortation in health pop culture is "Take the stairs, not the
+        elevator". Robotic stairclimbers assist with transporting objects and packages up and down
+        a flight of stairs. Stair descent is a motor-task that overcomes the obstacle of a
+        multi-layered surface (stairs) beginning at a certain height and ending at a lower landing.
+        Mastering stair descent involves motor-skill, perceptual understanding of height, and proper
+        strategy involved in descending. Descent requires walkers to maintain support on one leg,
+        while swinging the other leg and bending the support leg to compensate for the level
+        change.</string>
 </resources>
