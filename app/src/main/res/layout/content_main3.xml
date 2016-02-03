@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:layout_weight="4"
-                android:maxLength="6" />
+                android:maxLength="10" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,6 +72,8 @@
                 android:layout_weight="1"
                 android:text="Pushup"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/pushup"
                 android:layout_width="wrap_content"
@@ -99,6 +101,8 @@
                 android:layout_weight="1"
                 android:text="Situp"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/situp"
                 android:layout_width="wrap_content"
@@ -126,6 +130,8 @@
                 android:layout_weight="1"
                 android:text="Squats"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/squats"
                 android:layout_width="wrap_content"
@@ -153,6 +159,8 @@
                 android:layout_weight="1"
                 android:text="Leg-lift"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/leglift"
                 android:layout_width="wrap_content"
@@ -180,6 +188,8 @@
                 android:layout_weight="1"
                 android:text="Plank"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/plank"
                 android:layout_width="wrap_content"
@@ -207,6 +217,8 @@
                 android:layout_weight="1"
                 android:text="Jumping Jacks"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/jumpingjacks"
                 android:layout_width="wrap_content"
@@ -234,6 +246,8 @@
                 android:layout_weight="1"
                 android:text="Pullup"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/pullup"
                 android:layout_width="wrap_content"
@@ -261,6 +275,8 @@
                 android:layout_weight="1"
                 android:text="Cycling"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/cycling"
                 android:layout_width="wrap_content"
@@ -288,6 +304,8 @@
                 android:layout_weight="1"
                 android:text="Walking"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/walking"
                 android:layout_width="wrap_content"
@@ -315,6 +333,8 @@
                 android:layout_weight="1"
                 android:text="Jogging"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/jogging"
                 android:layout_width="wrap_content"
@@ -342,6 +362,8 @@
                 android:layout_weight="1"
                 android:text="Swimming"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/swimming"
                 android:layout_width="wrap_content"
@@ -369,6 +391,8 @@
                 android:layout_weight="1"
                 android:text="Stair-Climbing"  />
             <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
                 android:gravity="center"
                 android:id="@+id/stairclimbing"
                 android:layout_width="wrap_content"

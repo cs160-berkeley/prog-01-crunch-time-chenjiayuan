@@ -7,6 +7,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +17,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -44,7 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 TextView repminSelectText = (TextView) findViewById(R.id.repminSelect);
                 String unit = repOrMin(spinner.getSelectedItem().toString());
                 repminSelectText.setText(unit);
+                changeImage(spinner.getSelectedItem().toString());
             }
+
             public void onNothingSelected(AdapterView<?> parent) {
             }
         });
@@ -113,10 +118,45 @@ public class MainActivity extends AppCompatActivity {
             return getString(R.string.mins);
     }
 
+    //change source image
+    private void changeImage(String e) {
+        ImageView view = (ImageView)findViewById(R.id.imageView);
+        if (e.equals("Pushup")) {
+            view.setImageResource(R.drawable.pushup);
+        } else if (e.equals("Situp")) {
+            view.setImageResource(R.drawable.situp);
+        } else if (e.equals("Squats")) {
+            view.setImageResource(R.drawable.squats);
+        } else if (e.equals("Leg-lift")) {
+            view.setImageResource(R.drawable.leglift);
+        } else if (e.equals("Plank")) {
+            view.setImageResource(R.drawable.plank);
+        } else if (e.equals("Jumping Jacks")) {
+            view.setImageResource(R.drawable.jumpingjack);
+        } else if (e.equals("Pullup")) {
+            view.setImageResource(R.drawable.pullup);
+        } else if (e.equals("Cycling")) {
+            view.setImageResource(R.drawable.cycling);
+        } else if (e.equals("Walking")) {
+            view.setImageResource(R.drawable.walking);
+        } else if (e.equals("Jogging")) {
+            view.setImageResource(R.drawable.jogging);
+        } else if (e.equals("Swimming")) {
+            view.setImageResource(R.drawable.swimming);
+        } else if (e.equals("Stair-Climbing")) {
+            view.setImageResource(R.drawable.stairclimbing);
+        } else {
+            view.setImageResource(R.drawable.pushup);
+        }
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        menu.findItem(R.id.option1).setIcon(R.drawable.ic_filter_1_black_48dp);
+        menu.findItem(R.id.option2).setIcon(R.drawable.ic_filter_2_white_48dp);
+        menu.findItem(R.id.option3).setIcon(R.drawable.ic_filter_3_white_48dp);
         return true;
     }
 

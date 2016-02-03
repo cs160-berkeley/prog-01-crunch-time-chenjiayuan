@@ -83,6 +83,9 @@ public class Main3Activity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        menu.findItem(R.id.option1).setIcon(R.drawable.ic_filter_1_white_48dp);
+        menu.findItem(R.id.option2).setIcon(R.drawable.ic_filter_2_white_48dp);
+        menu.findItem(R.id.option3).setIcon(R.drawable.ic_filter_3_black_48dp);
         return true;
     }
 
