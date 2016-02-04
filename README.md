@@ -15,7 +15,7 @@ Jiayuan Chen ([jiayuan.chen@berkeley.edu](mailto:your_email@berkeley.edu))
 
 ## Demo Video
 
-See [Video Demo](￼https://youtu.be/WCgyBj91BlA)
+See [Crunch Time Video Demo](https://youtu.be/WCgyBj91BlA)
 
 ## Acknowledgments
 
