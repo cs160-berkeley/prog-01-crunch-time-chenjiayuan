@@ -15,7 +15,7 @@ Jiayuan Chen ([jiayuan.chen@berkeley.edu](mailto:your_email@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here](https://link_to_your_video)
+See [Video Demo](￼https://youtu.be/WCgyBj91BlA)
 
 ## Acknowledgments
 
